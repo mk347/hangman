@@ -1,0 +1,42 @@
+.subtitle {
+  margin-bottom: 6rem; }
+
+.ui-wrap {
+  margin-top: 10%;
+  padding: 0 10%; }
+
+.full-width {
+  width: 100%; }
+
+.input-wrap {
+  display: flex;
+  width: 100%; }
+
+.ui-display-health-label {
+  font-weight: bold;
+  padding-right: 1rem; }
+
+#letter-input {
+  font-size: 5rem;
+  height: 8rem;
+  width: 8rem;
+  text-transform: uppercase;
+  padding-left: 1.45rem; }
+
+#ui-display-word {
+  letter-spacing: 1rem;
+  margin-top: 4rem; }
+
+#ui-display-letters {
+  letter-spacing: 1rem; }
+
+.ui-display-health {
+  padding-right: .5rem;
+  margin-top: 1rem;
+  color: #9d0000; }
+
+input {
+  height: 2.5rem;
+  padding-left: .5rem; }
+
+/*# sourceMappingURL=hangman.css.map */

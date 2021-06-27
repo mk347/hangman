@@ -59,7 +59,8 @@ class UI {
 
 }
 
-const game = new GameInfo('escalator');
+let word = wordList[Math.floor(Math.random() * wordList.length)];
+const game = new GameInfo(word);
 UI.getPuzzle(game);
 UI.setHealth(game);
 let displayWord = document.getElementById('ui-display-word');
@@ -75,10 +76,16 @@ guessButton.addEventListener('submit', function (e) {
 
   if (game.remainingGuesses < 1) {
     UI.showAlerts('Game over, try again', 'danger');
+    setTimeout(function () {
+      location.reload();
+    }, 500);
   } // Alert win
 
 
   if (!displayWord.textContent.includes('*')) {
     UI.showAlerts('Congratulations, you win!', 'success');
+    setTimeout(function () {
+      location.reload();
+    }, 500);
   }
 });
